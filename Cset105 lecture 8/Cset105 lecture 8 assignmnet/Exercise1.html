@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script src="exercise1.js"></script>
+     <p>My ostrich Gertrude:</p>
+  <p><img id="gertrude" src="ostrich.png"></p>
+  <script>
+    let ostrich = document.getElementById("gertrude");
+    console.log(ostrich.src);
+  </script>
+  <p>One</p>
+   <p>Two</p>
+    <p>Three</p>
+
+    <script>
+        let paragraphs = document.getElementsByTagName("p");
+        document.body.insertBefore(paragraphs[2], paragraphs[0]);
+    </script>
+   <p>The <img id="Cat" src="cat.png">cat in the 
+    <img src="hat.png" alt="Hat">.</p>
+     <p><button onclick="replaceImages()">Replace</button></p>
+     <script>
+        function replaceImages() {
+            let images = document.body.getElementsByTagName("img");
+            for (let i = images.length - 1; i >= 0; i--) {
+                let image = images[i];
+                if (images[i].alt){
+                    let text = document.createTextNode(image.alt);
+                    images[i].parentNode.replaceChild(text, images[i]);
+                }
+            }
+        }
+     </script>
+     <button>Click me</button>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project 3 – JavaScript Pattern Generator</title>
+  <link rel="stylesheet" href="folio.css">
+  <link rel="stylesheet" href="project3.css">
+</head>
+<body>
+
+  <header class="project-header">
+    <h1>JavaScript Pattern Generator</h1>
+    <p>
+      An interactive JavaScript project that displays star patterns dynamically when you click the button.
+      This project helped me practice JavaScript loops, DOM manipulation, and real-time output display.
+    </p>
+  </header>
+
+  <section class="project-content">
+    <div class="project-codebox">
+      <h3>Pattern Output</h3>
+      <pre id="patternBox">Click the button below 👇</pre>
+      <button id="runPattern">Generate Pattern</button>
+    </div>
+
+    <div class="project-details">
+      <h2>About This Project</h2>
+      <p>
+        This project generates a simple pattern of stars using JavaScript loops. When the button is clicked,
+        it prints a triangle pattern that starts with five stars and decreases to one. It’s a great example
+        of how  fun and creative JavaScript can be.
+      </p>
+
+      <div class="tech-stack">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <p>
+        Creating this taught me the basics of loops, string concatenation, and how to update elements using
+        JavaScript. It’s small, but it shows the power of JavaScript.
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://github.com/yourusername/js-pattern-generator" target="_blank" class="btn-code">💻 View Code</a>
+        <a href="PortFolio.html" class="btn-back">← Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("runPattern").addEventListener("click", function() {
+      let pattern = "";
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+          pattern += "*";
+        }
+        pattern += "\\n";
+      }
+      document.getElementById("patternBox").textContent = pattern;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+console.log("These are what I \"ordered\"-" );
+console.log("1.My son's watch");
+console.log("2. 12 cans of soda");
+console.log("3. Some chips - \n Lays\n Pringles");
+console.log( "125 divided by pi is 39.7887365830245 \n\nThe current world population is about 7000000000\nLets say 7.139 \% of them are financially stable\nThat makes 7e9\* 7.139 / 100 = 499730000 people\nIf 499730000 people each donate \$0.01 a day,\nimagine how much money we can collect!\n499730000 \* 0.01 would be 4997300 dolars a day!\nWhich is equivalent to 1824014500 dollars a year!");
+console.log(false);
+console.log(false);
+console.log(false);
+console.log(true);
+console.log(false);
+console.log(true);
+console.log(false);
+console.log(false);
+console.log(false);
+console.log(true);
+console.log(true);
+// Answer sheet
+console.log( "Apple" > "Orange");
+console.log( "Apple" > "apple");
+console.log("Apple" > "aPPLE");
+console.log("ABCD" == "ABCD");
+console.log("abcd"=== "dcba");
+console.log("2" == 2);
+console.log("2" === 2);
+console.log("12" == 21);
+console.log("two" == 2);
+console.log(null == null);
+console.log(null == undefined);

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Buttons</title>
+</head>
+<body>
+  <h1>Button Color Changer</h1>
+
+  
+  <div id="buttonContainer"></div>
+
+  <br>
+
+  
+  <label for="colorSelect">Change all buttons to:</label>
+  <select id="colorSelect" onchange="changeButtonColors(this.value)">
+    <option value="">--Select an option--</option>
+    <option value="red">Red</option>
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="random">Random</option>
+    <option value="reset">Reset</option>
+  </select>
+
+ 
+  <script src="Color game.js"></script>
+</body>
+</html>
+
