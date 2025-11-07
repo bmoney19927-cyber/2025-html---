@@ -1,0 +1,157 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #87ceeb, #1e90ff);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+
+.project-header {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+.project-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.project-header p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #e3e3e3;
+}
+
+
+.project-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 10%;
+  gap: 50px;
+}
+
+
+.project-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+}
+
+
+.project-details {
+  flex: 1 1 400px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(6px);
+}
+
+.project-details h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.project-details p {
+  font-size: 1.05rem;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0 25px;
+}
+
+.tech-stack span {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.tech-stack span:hover {
+  background: #fff;
+  color: #1e90ff;
+}
+
+.project-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.project-buttons a {
+  text-decoration: none;
+  color: #fff;
+  background: #1e90ff;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-buttons a:hover {
+  background: #63b3ed;
+  transform: translateY(-3px);
+}
+
+.btn-code {
+  background: #444;
+}
+
+.btn-code:hover {
+  background: #666;
+}
+
+.btn-back {
+  background: transparent;
+  border: 2px solid #fff;
+}
+
+.btn-back:hover {
+  background: #fff;
+  color: #1e90ff;
+}
+
+
+@media (max-width: 900px) {
+  .project-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-details {
+    width: 90%;
+  }
+}
